@@ -41,11 +41,11 @@ if __name__ == '__main__':
     Tk().withdraw()
 
     # The files in this folder won't be moved
-    original = askdirectory(title="Select the origin folder")
+    original = askdirectory(title="Select the original folder")
     # The files in this folder WILL be compared and moved
     addition = askdirectory(title="Select the additional folder")
     # duplicate files will be moved from addition to this folder
-    destination = askdirectory(title="Select the additional folder")
+    destination = askdirectory(title="Select the duplicate destination folder")
 
     files_dict = dict()
     files_dict = iterate_folder(original, files_dict)
