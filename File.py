@@ -20,11 +20,9 @@ class MyFile:
         if isinstance(other, MyFile):
             if self.name != other.name:
                 return False
-            if self.name != other.name:
+            if self.file_size != other.file_size:
                 return False
-            if self.name != other.name:
-                return False
-            if self.name != other.name:
+            if self.file_hash != other.file_hash:
                 return False
             return True
         else:
